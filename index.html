@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+		/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Bookshelf Apps</title>
+		<link
+			rel="shortcut icon"
+			href="assets/img/book-solid.svg"
+			type="image/x-icon"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+			integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="jumbotron">
+				<div class="left-content">
+					<img
+						src="assets/img/book7.png"
+						class="banner-img"
+						width="100%"
+					/>
+				</div>
+				<div class="right-content">
+					<h1 class="heading1">Build Your Own Library!</h1>
+					<p class="text-content">
+						Add books to your library and easily read across all your
+						devices.
+					</p>
+				</div>
+			</div>
+		</header>
+		<nav id="navbar">
+			<label class="logo">Bookshelf</label>
+			<ul class="right-nav">
+				<li>
+					<section class="search_section">
+						<div class="search-icon"><span class="fa fa-search"></span></div>
+						<div class="cancel-icon"><span class="fa fa-times"></span></div>
+						<form id="searchBook">
+							<label for="searchBookTitle"></label>
+							<input
+								id="searchBookTitle"
+								type="text"
+								placeholder="Cari Judul Buku"
+							/>
+							<button id="searchSubmit" type="submit">
+								<i class="fa fa-search"></i>
+							</button>
+						</form>
+					</section>
+				</li>
+			</ul>
+		</nav>
+
+		<main>
+			<section class="input_section glassmorphism shadow">
+				<h2>Masukkan Buku Baru</h2>
+				<form id="inputBook">
+					<div class="input">
+						<label for="inputBookTitle">Judul</label>
+						<input id="inputBookTitle" value="" type="text" required />
+					</div>
+					<div class="input">
+						<label for="inputBookAuthor">Penulis</label>
+						<input id="inputBookAuthor" value="" type="text" required />
+					</div>
+					<div class="input">
+						<label for="inputBookYear">Tahun</label>
+						<input
+							id="inputBookYear"
+							value=""
+							type="number"
+							required
+							onkeypress="if(this.value.length === 4) return false;"
+						/>
+					</div>
+					<div class="input_inline">
+						<input id="inputBookIsComplete" type="checkbox" />
+						<label for="inputBookIsComplete">Selesai dibaca</label>
+					</div>
+					<button id="bookSubmit" type="submit">Tambahkan Buku</button>
+				</form>
+			</section>
+
+			<section id="myLibrary" class="book_shelf glassmorphism">
+				<h2>Belum selesai dibaca</h2>
+
+				<div id="incompleteBookshelfList" class="book_list"></div>
+			</section>
+
+			<section class="book_shelf glassmorphism">
+				<h2>Selesai dibaca</h2>
+
+				<div id="completeBookshelfList" class="book_list"></div>
+			</section>
+
+			<div id="myModal" class="modal">
+				<!-- Modal content -->
+				<div class="modal-content">
+					<img
+						src="assets/img/book9.png"
+						alt="book-deleted-img"
+						width="55%"
+					/>
+					<p>Berhasil Menghapus Buku Dari Daftar!</p>
+					<br />
+					<button class="universalButton closeBTN">&times; CLOSE</button>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<p>Copyright &copy; 2021 Bookshelf Apps. All Right Reserved.</p>
+			<p><i class="fas fa-book"></i> Made By Lahia Ardhan.</p>
+		</footer>
+		<script src="assets/js/app.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/search.js"></script>
+	</body>
+</html>
