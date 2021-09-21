@@ -454,8 +454,7 @@ footer {
 		transform: translate(-50%, -50%);
 	}
 	.search_section > form > input {
-		padding: 5px 8px;
-		max-width: 130px;
+		max-width: 180px;
 	}
 	.search_section .search-icon {
 		display: block;
