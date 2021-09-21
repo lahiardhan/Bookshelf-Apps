@@ -22,6 +22,8 @@ body {
 		 radial-gradient(at 82% 65%, hsl(153.97, 100%, 85%) 0, transparent 55%);
 }
 header {
+	background-blend-mode: multiply;
+	background-color: rgba(128, 128, 128, 0.2);
 	margin: 0 auto;
 	background-image: linear-gradient(to top right, #44ff96,  #007fc4);
 }
@@ -44,8 +46,6 @@ header {
 }
 
 .jumbotron {
-	background-blend-mode: multiply;
-	background-color: rgba(128, 128, 128, 0.2);
 	font-size: 20px;
 	padding: 100px 60px 60px 60px;
 	text-align: center;
