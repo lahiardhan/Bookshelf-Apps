@@ -44,6 +44,8 @@ header {
 }
 
 .jumbotron {
+	background-blend-mode: multiply;
+	background-color: rgba(128, 128, 128, 0.2);
 	font-size: 20px;
 	padding: 100px 60px 60px 60px;
 	text-align: center;
@@ -64,6 +66,8 @@ header {
 }
 
 nav {
+	background-blend-mode: multiply;
+	background-color: rgba(128, 128, 128, 0.2);
 	background-image: linear-gradient(32deg, #44ff96,  #22bfad);
 	z-index: 1;
 	position: sticky;
