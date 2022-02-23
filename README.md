@@ -1,4 +1,4 @@
-# Tugas Akhir Kelas Dicoding "Belajar Membuat Front End Web untuk Pemula" Bookshelf Website Application 📚
+Bookshelf Website Application 📚
 
 Website ini dibuat dengan menggunakan HTML, CSS, dan Javascript from scracth tanpa menggunakan framework atau library apapun. 🚀
 
