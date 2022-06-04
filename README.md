@@ -5,7 +5,7 @@ Website ini dibuat dengan menggunakan HTML, CSS, dan Javascript from scracth tan
 Dibuat dengan memanfaatkan web storage yang ada pada browser, dimana data buku-buku yang ditambahkan akan disimpan ke dalam Local Storage dari browser untuk menjaga data buku tersebut tetap ada sekalipun jendela browser ditutup.
 
 Link :
-https://ibook-lib.netlify.app/
+https://bookshelf-lac.vercel.app/
 
 
 # 🖥Tampilan desktop untuk website ini :
